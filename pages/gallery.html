@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/slider-styles.css" />
+    <title>Галерея - Рівненська картинна галерея</title>
+  </head>
+
+  <body>
+    <header class="row">
+      <div class="container">
+        <div class="flex-row aligned justify-between flex-wrap">
+          <img class="logo" src="../images/main/logo.png" alt="logo" />
+          <a href="../index.html">
+            <p class="logo-text">Рівненська картинна галерея</p>
+          </a>
+          <a href="collection.html">
+            <p class="logo-text-button">Колекції</p>
+          </a>
+          <a href="gallery.html">
+            <p class="logo-text-button">Галерея</p>
+          </a>
+          <a href="about.html">
+            <p class="logo-text-button">Про нас</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper margin-bottom-gallery">
+      <div class="row">
+        <div class="container">
+          <h1 class="top-title">ГАЛЕРЕЯ</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="row aligned">
+            <button class="slider-ui" id="slider-prev">←</button>
+            <div class="slider-viewport">
+              <div class="slider-container">
+                <div class="slide-item">
+                  <img src="../images/slider/1.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/2.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/3.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/4.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/5.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/6.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/7.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/8.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/9.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/10.jpg" alt="slide" />
+                </div>
+                <div class="slide-item">
+                  <img src="../images/slider/11.jpg" alt="slide" />
+                </div>
+              </div>
+            </div>
+            <button class="slider-ui" id="slider-next">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="container">
+          <div class="flex-row aligned justify-between">
+            <p class="logo-text">Canonic</p>
+            <p class="logo-text">2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../script/AQSlider.js"></script>
+    <script type="text/javascript">
+      let aqslider = new Slider({
+        viewport: "slider-viewport",
+        container: "slider-container",
+        slideItem: "slide-item",
+      });
+    </script>
+    <script src="../script/events.js"></script>
+  </body>
+</html>
