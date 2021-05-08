@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>ЗВОРОТНІЙ ЗВ'ЯЗОК - Рівненська картинна галерея</title>
+  </head>
+
+  <body>
+    <header class="row">
+      <div class="container">
+        <div class="flex-row aligned justify-between flex-wrap">
+          <img class="logo" src="../images/main/logo.png" alt="logo" />
+          <a href="../index.html">
+            <p class="logo-text">Рівненська картинна галерея</p>
+          </a>
+          <a href="collection.html">
+            <p class="logo-text-button">Колекції</p>
+          </a>
+          <a href="gallery.html">
+            <p class="logo-text-button">Галерея</p>
+          </a>
+          <a href="about.html">
+            <p class="logo-text-button">Про нас</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper margin-bottom">
+      <div class="row">
+        <div class="container">
+          <h1 class="top-title">ЗВОРОТНІЙ ЗВ'ЯЗОК</h1>
+
+          <form class="row" action="../php/mail.php" method="post">
+            <div class="container justify-center aligned">
+              <div class="feedback-form">
+                <input
+                  class="input-text"
+                  type="text"
+                  name="name"
+                  placeholder="Введіть ваше ім'я:"
+                />
+                <input
+                  class="input-text"
+                  type="text"
+                  name="email"
+                  placeholder="Введіть електронну пошту:"
+                />
+                <input
+                  class="input-text"
+                  type="text"
+                  name="theme"
+                  placeholder="Введіть тему повідомлення:"
+                />
+                <textarea
+                  class="input-messsege margin-bottom"
+                  name="message"
+                  placeholder="Введіть повідомлення:"
+                ></textarea>
+                <input
+                  class="button-send"
+                  type="submit"
+                  value="Надіслати повідомлення"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="container">
+          <div class="flex-row aligned justify-between">
+            <p class="logo-text">Canonic</p>
+            <p class="logo-text">2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
