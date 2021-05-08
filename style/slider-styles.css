@@ -1,0 +1,50 @@
+/* Carousel */
+.slider-viewport {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 540px;
+}
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.slide-item {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.slide-item img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+button.slider-ui {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(223, 223, 223);
+  outline: none;
+  margin: 15px;
+}
+.slider-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  z-index: 1;
+  color: white;
+  padding: 4%;
+  display: flex;
+  align-items: flex-end;
+  font-family: CB;
+}
